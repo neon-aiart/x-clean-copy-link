@@ -2,15 +2,27 @@
 
 🇯🇵  
 
-Xの「リンクをコピー」を押したときに ?s=20 等のトラッキングコードを消す超シンプルなコード  
+X（Twitter）で「リンクをコピー」した際につく余計なトラッキングパラメータ（`?s=20` や `?t=...` 等）を自動でカットするユーザースクリプトです  
+
+## 🌟 主な特徴  
+
+* **自動クリーンアップ**: ポストやプロフィールのURLをコピーするだけで、余計なコードを含まない綺麗なURLをクリップボードに保存します  
+* **高精度な判定**: ポスト個別ページと検索・プロフィールのURLを正しく識別してスマートに処理します  
+* **軽量・安全**: 外部ライブラリ依存ゼロ。Xのデザイン変更に影響を受けにくいブラウザ標準機能のみで実装されています  
 
 🇺🇸  
 
-Automatically removes tracking parameters (e.g., ?s=20, ?t=..., utm_*) when copying links on X (Twitter) to keep your URLs clean.  
+A UserScript that automatically removes unnecessary tracking parameters (e.g., `?s=20`, `?t=...`) when you copy links on X (Twitter).  
+
+## 🌟 Key Features  
+
+* **Automatic Cleanup**: Simply copy post or profile links to save clean URLs to your clipboard without extraneous parameters.  
+* **Smart Detection**: Accurately distinguishes between individual post URLs, search queries, and profiles to handle each correctly.  
+* **Lightweight & Safe**: Zero external dependencies. Built exclusively with standard browser APIs for resilience against X UI updates.  
 
 ---
 
-### ✨ インストール方法 (Installation Guide)  
+## ✨ インストール方法 (Installation Guide)  
 
 * **UserScriptマネージャーをインストール (Install the UserScript manager):**  
   * **Tampermonkey**: [https://www.tampermonkey.net/](https://www.tampermonkey.net/)  
