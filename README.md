@@ -1,4 +1,7 @@
-# 🔗 X Clean Copy Link v1.2
+# 🔗 X Clean Copy Link  
+
+[![Version](https://img.shields.io/badge/version-1.7-orange.svg)](https://github.com/neon-aiart)
+[![License](https://img.shields.io/badge/license-PolyForm%20Noncommercial%201.0.0-blue.svg)](https://polyformproject.org/licenses/noncommercial/1.0.0/)
 
 🇯🇵  
 
@@ -6,9 +9,21 @@ X（Twitter）で「リンクをコピー」した際につく余計なトラッ
 
 ## 🌟 主な特徴  
 
-* **自動クリーンアップ**: ポストやプロフィールのURLをコピーするだけで、余計なコードを含まない綺麗なURLをクリップボードに保存します  
-* **高精度な判定**: ポスト個別ページと検索・プロフィールのURLを正しく識別してスマートに処理します  
-* **軽量・安全**: 外部ライブラリ依存ゼロ。Xのデザイン変更に影響を受けにくいブラウザ標準機能のみで実装されています  
+* **自動クリーンアップ**:  
+  ポストやプロフィールのURLをコピーするだけで  
+  余計なコードを含まない綺麗なURLをクリップボードに保存します  
+* **高度なURL書き換え・ホワイトリスト機能**:  
+  コピー時や右クリックメニュー開画時に、特定のパラメータを  
+  高画質化（`name=large` ➔ `name=orig`）へ置換しつつ  
+  必要なパラメータ（`format` 等）だけをスマートに保持します  
+* **ゼロ通信の画像URL最適化**:  
+  右クリックメニュー時の画像URL書き換えでは  
+  `0ms` の即時復元ロジックによりブラウザの無駄な画像通信をゼロに抑えます  
+* **高精度な判定**:  
+  ポスト個別ページと検索・プロフィールのURLを正しく識別してスマートに処理します  
+* **軽量・安全**:  
+  外部ライブラリ依存ゼロ  
+  Xのデザイン変更に影響を受けにくいブラウザ標準機能のみで実装されています  
 
 🇺🇸  
 
@@ -16,9 +31,22 @@ A UserScript that automatically removes unnecessary tracking parameters (e.g., `
 
 ## 🌟 Key Features  
 
-* **Automatic Cleanup**: Simply copy post or profile links to save clean URLs to your clipboard without extraneous parameters.  
-* **Smart Detection**: Accurately distinguishes between individual post URLs, search queries, and profiles to handle each correctly.  
-* **Lightweight & Safe**: Zero external dependencies. Built exclusively with standard browser APIs for resilience against X UI updates.  
+* **Automatic Cleanup**:  
+  Simply copy post or profile links to save clean URLs  
+  to your clipboard without extraneous parameters.  
+* **Advanced URL Replacement & Whitelisting**:  
+  Replaces parameters (e.g., upgrading `name=large` to `name=orig`)  
+  while preserving essential whitelisted parameters (like `format`)  
+  during both text copying and image right-click operations.  
+* **Zero-Network Image Optimization**:  
+  Employs a `0ms` instant restoration mechanism during right-clicks  
+  to update menu URLs without triggering extra network requests.  
+* **Smart Detection**:  
+  Accurately distinguishes between individual post URLs,  
+  search queries, and profiles to handle each correctly.  
+* **Lightweight & Safe**:  
+  Zero external dependencies.  
+  Built exclusively with standard browser APIs for resilience against X UI updates.  
 
 ---
 
@@ -35,6 +63,11 @@ A UserScript that automatically removes unnecessary tracking parameters (e.g., `
 ---
 
 ## 📝 更新履歴 (Changelog)  
+
+### v1.7  
+
+✅ 画像URLやパラメータの置換ロジック（`name=large` ➔ `name=orig` 等）およびホワイトリスト機能を実装  
+✅ 右クリックメニュー開画時に一瞬で元のDOM状態へ復元する安全な `0ms` タイマー処理を実装  
 
 ### v1.2  
 
