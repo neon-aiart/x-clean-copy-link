@@ -35,7 +35,7 @@
     'use strict';
 
     const SCRIPT_VERSION = '1.7';
-    const DEBUG = true;
+    const DEBUG = false;
 
     // 削除したいパラメータのリスト
     const trackingParams = ['s', 't', 'ref_src', 'ref_url', 'utm_source', 'utm_medium', 'utm_campaign',
